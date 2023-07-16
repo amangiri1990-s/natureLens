@@ -38,13 +38,7 @@ const routeModulePath: Route[] = [
         (mod) => mod.AboutModule
       ),
   },
-  {
-    path: 'Photos',
-    loadChildren: () =>
-      import('./../modules/photos/src/public-api').then(
-        (mod) => mod.PhotosModule
-      ),
-  },
+ 
 ];
 
 @NgModule({
