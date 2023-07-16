@@ -1,0 +1,12 @@
+<div class="card-class">
+  <mat-card class="card-size" *ngFor="let photo of photogroup">
+    <mat-card-header>
+      <mat-card-title>Revel in Nature's Beauty</mat-card-title>
+      <mat-card-subtitle>{{ photo.mode }}</mat-card-subtitle>
+    </mat-card-header>
+    <img src="{{ photo.imagePath }}" />
+    <mat-card-content>
+      <p>Welcome to the world of nature beauty.</p>
+    </mat-card-content>
+  </mat-card>
+</div>

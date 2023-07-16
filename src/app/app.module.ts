@@ -3,16 +3,31 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatSidenavModule,
+    FlexLayoutModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  exports: [
+    MatToolbarModule,
+    MatIconModule,
+    MatSidenavModule,
+    FlexLayoutModule,
+    BrowserAnimationsModule,
+  ],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

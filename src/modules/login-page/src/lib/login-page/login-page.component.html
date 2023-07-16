@@ -1,0 +1,59 @@
+<div class="form-container">
+  <div
+    fxLayout="column"
+    fxLayoutAlign="center center"
+    fxLayoutGap="1.8em"
+    class="loginform-inside"
+  >
+    <div class="header">
+      <span>Login</span>
+    </div>
+    <div class="space"></div>
+
+    <form class="login-form" [formGroup]="loginFormGrp">
+      <mat-form-field class="login-full-width">
+        <mat-label>User Name</mat-label>
+        <input
+          type="text"
+          placeholder="User Name"
+          aria-label="User Name"
+          matInput
+          (keyup)="getUserList($event)"
+          [formControlName]="'userName'"
+          [matAutocomplete]="autocompleteusername"
+        />
+        <mat-autocomplete
+          #autocompleteusername="matAutocomplete"
+          (optionSelected)="onUserNameSelection($event)"
+        >
+          <mat-option *ngFor="let user of displayUserList" [value]="user">
+            {{ user }}
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+      <mat-form-field class="login-full-width">
+        <mat-label>Password</mat-label>
+        <input
+          type="password"
+          placeholder="Password"
+          aria-label="Password"
+          matInput
+          [formControlName]="'password'"
+          [disabled]="true"
+        />
+      </mat-form-field>
+      <div class="login-button-row">
+        <button
+          type="submit"
+          type="submit"
+          [disabled]="isUserFieldEmpty"
+          mat-raised-button
+          color="primary"
+          (click)="login($event)"
+        >
+          Login
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

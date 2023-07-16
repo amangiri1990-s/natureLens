@@ -1,0 +1,25 @@
+.card-class{
+    flex-wrap: wrap;
+    display: flex;
+    
+}
+
+.card-size:hover{
+    background : rgb(110, 108, 108);
+    border-color:  rgb(5, 5, 5);
+    color: black;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 4px 4px 4px #000000;
+}
+
+.card-class>*{
+    flex: 1 1 420px;
+}
+.card-size {
+    max-width: 410px;
+    margin: 5px;
+  }
+  
+  
+  

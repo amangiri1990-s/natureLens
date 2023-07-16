@@ -1,0 +1,12 @@
+.card-class{
+ background-image: url("../../../../../assets/Image/images-1.jpg");
+ justify-content: center;
+}
+.card-class:hover{
+    background : rgb(110, 108, 108);
+    border-color:  rgb(5, 5, 5);
+    color: black;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 10px 10px 10px #000000;
+}

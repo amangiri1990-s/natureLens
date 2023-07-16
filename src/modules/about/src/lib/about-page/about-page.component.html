@@ -1,0 +1,19 @@
+<div class="card-class">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>About</mat-card-title>
+      <mat-card-subtitle>
+        Discover the Extraordinary Beauty of Nature Through Our Captivating
+        Collection</mat-card-subtitle
+      >
+    </mat-card-header>
+
+    <mat-card-content>
+      <div class="space" *ngFor="let block of pageDetail">
+        <p>
+          {{ block }}
+        </p>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>

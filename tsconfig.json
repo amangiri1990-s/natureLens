@@ -9,6 +9,11 @@
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
+    "paths": {
+      "loginPage": [
+        "dist/login-page"
+      ]
+    },
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "declaration": false,
@@ -29,5 +34,10 @@
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
     "strictTemplates": true
-  }
+  },
+  "paths": {
+    "@angular/*": [
+       "./node_modules/@angular/*"
+    ],
+ }
 }
